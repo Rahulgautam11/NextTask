@@ -1,0 +1,185 @@
+.footer {
+    padding: 64px 0 34px 0;
+    background-color: #FFFFFF;
+
+
+    .Footer_container {
+        width: 100%;
+        max-width: 1320px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: .75rem;
+        padding-left: .75rem;
+        margin: auto !important;
+
+        @media screen and (max-width: 1440px) {
+            max-width: 90%;
+        }
+
+
+        .footer_wrap {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 30px;
+
+            @media (max-width:1020px) {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+
+
+        }
+
+        .Logo_Footer_wrap {
+            display: flex;
+            flex-direction: column;
+            flex: 2;
+
+            .logoWrapper {
+                cursor: pointer;
+                margin-bottom: 33px;
+
+                .logo {
+                    text-align: center;
+                    align-items: center;
+                    width: 100px;
+                    height: 100px;
+                    height: auto;
+                }
+            }
+        }
+
+        h6 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            color: rgb(95, 6, 6);
+            font-family: 'Blinker', sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: rgba(0, 0, 0, 0.6);
+            width: 90%;
+            font-family: 'Blinker', sans-serif;
+
+            @media (max-width:768px) {
+                width: 100%;
+            }
+        }
+
+        .menu_wrap,
+        .location_warp,
+        .contact_wrap {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            width: 100%;
+        }
+
+
+        .FooterMenuItemList {
+
+            margin-top: 16px;
+
+            .footerMenuItem {
+                padding: 4px !important;
+                font-family: 'Blinker', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: rgba(#000, 0.6);
+
+                a {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: rgba(32, 32, 32, 0.8);
+                    text-decoration: none;
+                    transition-duration: 5s;
+                    transition: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+
+        .footerHighlights {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 24px;
+
+            @media (max-width:768px) {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+
+            .footerTermsCondition {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 12px;
+                position: relative;
+
+                p {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: rgba(#000, 0.6);
+                    font-family: 'Blinker', sans-serif;
+
+                    &:first-child {
+                        width: 180px;
+                    }
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+
+
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: #000000;
+                display: flex;
+                width: 100%;
+
+                a {
+                    text-decoration: underline;
+                    color: inherit;
+                }
+            }
+
+            .copyRightText {
+                color: rgba(#000, 0.6);
+                font-family: 'Blinker', sans-serif;
+
+            }
+        }
+
+        .divider {
+            margin: 24px 0;
+            height: 0;
+            overflow: hidden;
+            border-top: 1px solid rgba(rgb(179, 177, 177), 0.4);
+        }
+    }
+}
